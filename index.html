@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunnyBunny</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li onclick="swipe_window('main')">На главную</li>
+                <li>Рестарт</li>
+                <li onclick="swipe_window('editor')">Редактор</li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div id="main">
+            <img src="" alt="">
+            <button onclick="swipe_window('game')">СТАРТ</button>
+        </div>
+        <div id="game">
+            <canvas id="gamezone"></canvas>
+        </div>
+        <div id="editor">
+            <img src="assets/image/sand.jpg" alt="" onclick="select_item(1,1)">
+            <img src="assets/image/grassPX2.png" alt="" onclick="select_item(2,1)">
+            <img src="assets/image/carrotPX.jpg" alt="" onclick="select_item(3,2)">
+            <img src="assets/image/button.jpg" alt="" onclick="select_item(4,2)">
+            <img src="assets/image/spike.jpg" alt="" onclick="select_item(5,2)">
+            <img src="assets/image/trap1.jpg" alt="" onclick="select_item(6,1)">
+            <img src="assets/image/trap2.jpg" alt="" onclick="select_item(7,1)">
+            <img src="assets/image/trap3.jpg" alt="" onclick="select_item(8,1)">
+            <img src="assets/image/trap4.jpg" alt="" onclick="select_item(9,1)">
+            <img src="assets/image/rabbitFront.png" alt="" onclick="select_item(10,4)">
+        </div>
+    </article>
+    <footer></footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
